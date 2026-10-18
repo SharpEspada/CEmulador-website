@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cemulador – Cemu fork with frame dumping and savestates</title>
+  <meta name="description" content="Cemulador is a fork of the Cemu Wii U emulator that adds frame dumping and working savestates.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="hero">
+    <div class="wrap">
+      <h1>Cemulador</h1>
+      <p class="tagline">A fork of the Cemu Wii U emulator with frame dumping and working savestates.</p>
+      <a class="btn" href="#download">Go to downloads</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+
+    <section>
+      <h2>What's new</h2>
+      <dl class="features">
+        <dt>Frame dumping</dt>
+        <dd>Dump frames straight from the emulator with a single hotkey.</dd>
+        <dt>Savestates</dt>
+        <dd>Save and load the state of your game at any time. Saving and loading both work.</dd>
+      </dl>
+      <p>Everything else is the Cemu you already know.</p>
+    </section>
+
+    <section>
+      <h2>Limitations</h2>
+      <ul class="notes">
+        <li>
+          <strong>Audio dumping is not available yet.</strong>
+          It is planned for a future release.
+        </li>
+        <li>
+          <strong>Do not use savestates on the title screen of Wii U games.</strong>
+          Some games, such as NSMBU, use extra packs to fix crashes on the title screen, and these packs are incompatible with savestates. Everywhere else, savestates work perfectly.
+        </li>
+        <li>
+          <strong>Loading a state takes a while.</strong>
+          With your OS set to its best graphics performance, loading a state takes 20–30 seconds on average. With the lowest graphics performance, it takes more than 2 minutes.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Set up your hotkeys</h2>
+      <p>
+        You can bind keys to toggle the new features. In Cemulador, open
+        <strong>Options → Hotkey Settings</strong>. Frame dump and the savestate slots are in the list, next to the usual Cemu hotkeys.
+      </p>
+      <figure>
+        <img src="screenshot1.png" alt="Cemulador Hotkey Settings window showing Toggle frame dump and the Save state slots">
+        <figcaption>Hotkey Settings: frame dump and savestate slots can each be bound to a key or a controller button.</figcaption>
+      </figure>
+    </section>
+
+    <section id="download">
+      <h2>Download</h2>
+      <p>Each button starts the download of a ZIP file.</p>
+      <ul class="downloads">
+        <li>
+          <div>
+            <strong>Windows x64, installer</strong>
+            <span>Installs Cemulador like a regular program.</span>
+          </div>
+          <a class="btn" href="downloads/cemulador-installer-windows-x64.zip" download>Download</a>
+        </li>
+        <li>
+          <div>
+            <strong>Windows x64, portable</strong>
+            <span>Unzip and run. No installation needed.</span>
+          </div>
+          <a class="btn" href="downloads/cemulador-bin-windows-x64.zip" download>Download</a>
+        </li>
+        <li>
+          <div>
+            <strong>Linux x64</strong>
+            <span>Binaries for 64-bit Intel and AMD processors.</span>
+          </div>
+          <a class="btn" href="downloads/cemulador-bin-linux-x64.zip" download>Download</a>
+        </li>
+        <li>
+          <div>
+            <strong>Linux ARM</strong>
+            <span>Binaries for ARM processors.</span>
+          </div>
+          <a class="btn" href="downloads/cemulador-bin-linux-arm.zip" download>Download</a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="thanks">
+      <h2>Have fun!</h2>
+      <p>This project took me a lot of effort to build. I hope you enjoy it.</p>
+      <p>TheSharpEspada</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>
+        <strong>Disclaimer.</strong>
+        I am the author only of the additions made to Cemu in Cemulador, not of Cemu as a whole. Cemu belongs to its own developers and Cemulador is not an official Cemu release. Wii U and related names are trademarks of Nintendo, which is not affiliated with this project.
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
